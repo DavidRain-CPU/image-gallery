@@ -1,0 +1,207 @@
+body {
+  background-color: black;
+}
+
+.container {
+  background-color: grey;
+  padding: 1em 1em 1em 1em;
+}
+
+#clock {
+  text-align: center;
+  font-size: 2em;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Arial";
+  font-size: 3em;
+}
+
+/* DROPDOWN ACCORDION STYLES */
+
+.accordion {
+  background-color: rgba(0, 0, 0, 1);
+  font-size: 1.5em;
+  color: silver;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+.active,
+.accordion:hover {
+  background-color: #141414;
+  color: black;
+}
+.panel {
+  padding: 0 18px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  overflow: hidden;
+}
+/* IMAGE DISPLAY STYLES */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column {
+  flex: 50%;
+  max-width: 100%;
+}
+
+.column img {
+  vertical-align: middle;
+  width: 100%;
+  border: 3px solid black;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 5% 5%;
+}
+#mainHeader {
+  animation-name: headerColorChange;
+  animation-iteration-count: 5;
+  animation-duration: 8s;
+}
+
+/* BUTTON TEXT STYLING */
+#winterButton {
+  color: white;
+}
+
+#springButton {
+  color: green;
+}
+
+#summerButton {
+  color: skyblue;
+}
+
+#fallButton {
+  color: orange;
+}
+/* ADD ADDITIONAL CLASSES TO EACH PANEL SO THE BACKGROUND IS EITHER AN IMAGE OR COLOR GRADIENT THAT CORRESPONDS TO THE SEASON */
+
+.winterPanel {
+  animation-name: winterBackground;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.springPanel {
+  animation-name: springBackground;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.summerPanel {
+  animation-name: summerBackground;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.fallPanel {
+  animation-name: fallBackground;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes headerColorChange {
+  0% {
+    color: black;
+    text-shadow: 1px 1px white;
+  }
+  25% {
+    color: white;
+    text-shadow: 1px 1px green;
+  }
+  50% {
+    color: skyblue;
+    text-shadow: 1px 1px black;
+  }
+  75% {
+    color: orange;
+    text-shadow: 1px 1px black;
+  }
+  100% {
+    color: black;
+    text-shadow: 1px 1px white;
+  }
+}
+
+@keyframes winterBackground {
+  0% {
+    background-image: linear-gradient(pink, purple);
+  }
+  25% {
+    background-image: linear-gradient(pink, blue);
+  }
+  50% {
+    background-image: linear-gradient(lightred, green);
+  }
+  75% {
+    background-image: linear-gradient(lightred, blue);
+  }
+  100% {
+    background-image: linear-gradient(pink, red);
+  }
+}
+
+@keyframes springBackground {
+  0% {
+    background-image: linear-gradient(#00a110, blue);
+  }
+  25% {
+    background-image: linear-gradient(#00a110, powderblue);
+  }
+  50% {
+    background-image: linear-gradient(#00a110, pink);
+  }
+  75% {
+    background-image: linear-gradient(#00a110, red);
+  }
+  100% {
+    background-image: linear-gradient(#00a110, cyan);
+  }
+}
+
+@keyframes summerBackground {
+  0% {
+    background-image: linear-gradient(#15b2d3, yellow);
+  }
+  25% {
+    background-image: linear-gradient(#15b2d3, orange);
+  }
+  50% {
+    background-image: linear-gradient(#15b2d3, red);
+  }
+  75% {
+    background-image: linear-gradient(#15b2d3, pink);
+  }
+  100% {
+    background-image: linear-gradient(#15b2d3, powderblue);
+  }
+}
+
+@keyframes fallBackground {
+  0% {
+    background-image: linear-gradient(#e4440e, darkred);
+  }
+  25% {
+    background-image: linear-gradient(#e4440e, brown);
+  }
+  50% {
+    background-image: linear-gradient(#e4440e, black);
+  }
+  75% {
+    background-image: linear-gradient(#e4440e, darkyellow);
+  }
+  100% {
+    background-image: linear-gradient(#e4440e, red);
+  }
+}
+
+/* MEDIA QUERY STYLING */
