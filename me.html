@@ -1,75 +1,132 @@
 <html>
+  <head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
 
-<head>
-  <script src="script.js"></script>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
+  <body>
+    <!-- MAKE IMAGE GALLERY SETS USING FLEXBOX -->
+    <div class="container">
+      <p id="clock"></p>
+      <h1 id="mainHeader">Explore the seasons</h1>
+      <button id="winterButton" class="accordion">Winter</button>
 
-<body>
-  <!-- MAKE IMAGE GALLERY SETS USING FLEXBOX -->
-  <div class="container">
-    <p id="clock"></p>
-    <h1 id="mainHeader">Explore the seasons</h1>
-    <button id="winterButton" class="accordion">Winter</button>
+      <div class="panel winterPanel">
+        <h1 id="winter">WINTER</h1>
 
-    <div class="panel winterPanel">
-      <h1 id="winter">WINTER</h1>
+        <div class="row">
+          <div class="column">
+            <img
+              src="https://images.unsplash.com/photo-1489674267075-cee793167910?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80"
+              alt="Winter"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1457269449834-928af64c684d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80"
+              alt="Winter"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1486496146582-9ffcd0b2b2b7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Winter"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1485123263479-f5ea30a2f92d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80"
+              alt="Winter"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1515133997814-e6460be24073?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
+              alt="Winter"
+            />
+          </div>
+        </div>
+      </div>
 
-      <div class="row">
-        <div class="column">
-          <img src="https://images.unsplash.com/photo-1489674267075-cee793167910?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80" alt="Winter" />
-          <img src="https://images.unsplash.com/photo-1457269449834-928af64c684d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80" alt="Winter" />
-          <img src="https://images.unsplash.com/photo-1486496146582-9ffcd0b2b2b7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Winter" />
-          <img src="https://images.unsplash.com/photo-1485123263479-f5ea30a2f92d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80" alt="Winter" />
-          <img src="https://images.unsplash.com/photo-1515133997814-e6460be24073?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" alt="Winter" />
+      <button id="springButton" class="accordion">Spring</button>
+
+      <div class="panel springPanel">
+        <h1 id="spring">SPRING</h1>
+        <div class="row">
+          <div class="column">
+            <img
+              src="https://images.unsplash.com/photo-1416230789844-1998de481fdc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80"
+              alt="Blue Skies"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1431444393712-19267bd26144?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1491&q=80"
+              alt="Spring"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1489919712052-23b74fe5bbf2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Spring"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1587202063067-ab974b68679f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Spring"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1491036775913-3fbc5c455842?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Spring"
+            />
+          </div>
+        </div>
+      </div>
+
+      <button id="summerButton" class="accordion">Summer</button>
+      <div class="panel summerPanel">
+        <h1 id="summer">SUMMER</h1>
+        <div class="row">
+          <div class="column">
+            <img
+              src="https://images.unsplash.com/photo-1542213493895-edf5b94f5a96?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1266&q=80"
+              alt="Summer"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1564763623496-579a9824ca25?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80"
+              alt="Summer"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1543145540-dac64d8ba4e6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80"
+              alt="Summer"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1578783125892-233fd7a4f9c8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Summer"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1559778989-e92bd0ecfd34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80"
+              alt="Summer"
+            />
+          </div>
+        </div>
+      </div>
+
+      <button id="fallButton" class="accordion">Fall</button>
+      <div class="panel fallPanel">
+        <h1 id="fall">FALL</h1>
+        <div class="row">
+          <div class="column">
+            <img
+              src="https://images.unsplash.com/photo-1476820865390-c52aeebb9891?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Fall"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1507967669805-c23336beea5b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Fall"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1473147319958-21c51372f690?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80"
+              alt="Fall"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1509838174235-432f709c7bfd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Fall"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1445855743215-296f71d4b49c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              alt="Fall"
+            />
+          </div>
         </div>
       </div>
     </div>
-
-    <button id="springButton" class="accordion">Spring</button>
-
-    <div class="panel springPanel">
-      <h1 id="spring">SPRING</h1>
-      <div class="row">
-        <div class="column">
-          <img src="https://images.unsplash.com/photo-1416230789844-1998de481fdc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" alt="Blue Skies" />
-          <img src="https://images.unsplash.com/photo-1431444393712-19267bd26144?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1491&q=80" alt="Spring" />
-          <img src="https://images.unsplash.com/photo-1489919712052-23b74fe5bbf2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Spring" />
-          <img src="https://images.unsplash.com/photo-1587202063067-ab974b68679f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Spring" />
-          <img src="https://images.unsplash.com/photo-1491036775913-3fbc5c455842?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Spring" />
-        </div>
-      </div>
-    </div>
-
-    <button id="summerButton" class="accordion">Summer</button>
-    <div class="panel summerPanel">
-      <h1 id="summer">SUMMER</h1>
-      <div class="row">
-        <div class="column">
-          <img src="https://images.unsplash.com/photo-1542213493895-edf5b94f5a96?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1266&q=80" alt="Summer" />
-          <img src="https://images.unsplash.com/photo-1564763623496-579a9824ca25?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80" alt="Summer" />
-          <img src="https://images.unsplash.com/photo-1543145540-dac64d8ba4e6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80" alt="Summer" />
-          <img src="https://images.unsplash.com/photo-1578783125892-233fd7a4f9c8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Summer" />
-          <img src="https://images.unsplash.com/photo-1559778989-e92bd0ecfd34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80" alt="Summer" />
-        </div>
-      </div>
-    </div>
-
-    <button id="fallButton" class="accordion">Fall</button>
-    <div class="panel fallPanel">
-      <h1 id="fall">FALL</h1>
-      <div class="row">
-        <div class="column">
-          <img src="https://images.unsplash.com/photo-1476820865390-c52aeebb9891?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Fall" />
-          <img src="https://images.unsplash.com/photo-1507967669805-c23336beea5b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Fall" />
-          <img src="https://images.unsplash.com/photo-1473147319958-21c51372f690?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80" alt="Fall" />
-          <img src="https://images.unsplash.com/photo-1509838174235-432f709c7bfd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Fall" />
-          <img src="https://images.unsplash.com/photo-1445855743215-296f71d4b49c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Fall" />
-        </div>
-      </div>
-    </div>
-
-  </div>
-</body>
-
+  </body>
 </html>
